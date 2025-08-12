@@ -1,0 +1,140 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: rgb(35, 33, 33);
+}
+
+/* navbar */
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.nav-links{
+    margin: 0 22px 0 22px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 550;
+    transition: all 0.2s ease;
+}
+.nav-links:hover{
+    transform: scale(1.05);
+    color:rgb(47, 224, 59);
+}
+
+/* Landing page */
+#hero{
+    height: 100vh;
+    background-image: url("assets/landing-page.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#greeting{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 23%;
+    left: 22%;
+}
+span{
+    position: relative;
+    left: 30%;
+    color: rgb(47, 224, 59);
+}
+
+/* About us */
+#aboutUs{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 15%;
+    padding: 10px;
+    width: 70%;
+    align-items: center;
+    border: 2px solid rgb(247, 247, 247);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* contacts */
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact-list{
+  display: flex;
+}
+
+/* Gallery */
+#gallery{
+    margin: 20px;
+
+}
+#gallery-section{
+    margin: 20px 0;
+    padding: 10px;
+}
+img{
+    border: 5px solid rgb(25, 25, 25);
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px rgb(47, 224, 59);
+    width: auto;
+    height: 220px;
+    margin: 8px 12px;
+}
+#addPhotoForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 60px;
+}
+#newPhotoLink{
+    width: 400px;
+    background-color: rgb(25, 25, 25);
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+#addPhotoBtn{
+    padding: 10px 15px;
+    border: 1px solid rgb(47, 224, 59);
+    border-radius: 20px;
+    background-color: rgb(47, 224, 59);
+    color: #fff;
+    font-weight: 550;
+    margin-left: 10px;
+}
+
+/* Blog/ */
+#blog-containter{
+    margin: 90px 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blog{
+    width: 400px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+.blog h2{
+    color: rgb(47, 224, 59);
+}
