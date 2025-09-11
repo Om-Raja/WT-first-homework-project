@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+
+    <style>
+      form {
+        width: 50%;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background: #f9f9f9;
+      }
+
+      form input,
+      form select,
+      form textarea {
+        margin: 10px 0;
+        padding: 6px;
+        width: 90%;
+        display: block;
+      }
+
+      legend {
+        font-size: 1.4rem;
+        font-weight: bolder;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      .inline {
+        display: inline-block;
+        width: auto;
+      }
+
+      .btns {
+        margin-top: 15px;
+      }
+
+      .btns input {
+        width: auto;
+        padding: 8px 16px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend><strong>GNDEC Student Details Form</strong></legend>
+
+        <label for="name">Name: </label>
+        <input id="name" type="text" name="name" placeholder="Om Raja" />
+
+        <label for="crn">Class Roll Number: </label>
+        <input id="crn" type="number" placeholder="2215XXX" name="crn" />
+
+        <label for="urn">University Roll Number: </label>
+        <input id="urn" name="urn" type="number" placeholder="22037XX" />
+
+        <label for="branch">Branch: </label>
+        <select id="branch" name="branch">
+          <option value="CSE" selected>CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="CE">CE</option>
+          <option value="EE">EE</option>
+          <option value="ME">ME</option>
+          <option value="IT">IT</option>
+        </select>
+
+        <label for="email">Email: </label>
+        <input id="email" type="email" name="email" placeholder="example@gndec.ac.in" />
+
+        <p><strong>Gender:</strong></p>
+        <input type="radio" id="male" name="gender" value="male" class="inline" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" class="inline" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" class="inline" />
+        <label for="other">Other</label>
+
+        <p><strong>Hobbies:</strong></p>
+        <input type="checkbox" id="reading" name="hobby" value="reading" class="inline" />
+        <label for="reading">Reading</label>
+
+        <input type="checkbox" id="coding" name="hobby" value="coding" class="inline" />
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="sports" name="hobby" value="sports" class="inline" />
+        <label for="sports">Sports</label>
+
+        <label for="address">Address: </label>
+        <textarea id="address" name="address" rows="4" placeholder="Enter your address"></textarea>
+
+        <div class="btns">
+          <input type="submit" value="Register" />
+          <input type="reset" value="Reset" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

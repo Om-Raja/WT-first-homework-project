@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylesheet Demo</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="practical5.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: darkblue;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <section>
+
+        <h1>Welcome to CSS Demo</h1>
+        
+        <p>This paragraph uses <b>internal CSS</b> from the &lt;style&gt; block in the head.</p>
+        
+        <p style="color: green; font-weight: bold;">This paragraph uses <b>inline CSS</b>.</p>
+        
+        <div class="external-box">
+            This box uses <b>external CSS</b> (from practical5.css).
+        </div>
+    </section>
+</body>
+</html>
