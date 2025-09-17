@@ -11,3 +11,7 @@ body{
 .carousel-indicators li{
     list-style-type: none;
 }
+
+section{
+    margin-top: 15px;
+}
